@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Rodrigues | Estratégia, Projetos Digitais & Negócios</title>
+  <meta name="description" content="Disciplina transforma planos em resultados. Foco, estratégia e evolução em projetos digitais, marketing e desenvolvimento pessoal com Lucas Rodrigues." />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lucas Rodrigues | Estratégia, Projetos Digitais & Negócios" />
+  <meta property="og:description" content="Disciplina transforma planos em resultados. Foco, estratégia e evolução com Lucas Rodrigues." />
+  <meta property="og:image" content="mentor_bg.jpg" />
+  
+  <!-- Tipografia Google Fonts (Cinzel / Plus Jakarta Sans / Caveat para o manuscrito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Cinzel', 'serif'],
+            handwriting: ['Caveat', 'cursive'],
+          },
+          colors: {
+            gold: {
+              300: '#FDE68A',
+              400: '#FBBF24',
+              500: '#D4AF37',
+              600: '#B8860B',
+              700: '#996515',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0B0F17; }
+    ::-webkit-scrollbar-thumb { background: #222C3D; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+    
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF6D1 0%, #D4AF37 50%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-bg-overlay {
+      background: linear-gradient(180deg, rgba(11, 15, 23, 0.72) 0%, rgba(11, 15, 23, 0.88) 60%, rgba(11, 15, 23, 1) 100%);
+    }
+
+    .hero-bg-side {
+      background: linear-gradient(90deg, rgba(11, 15, 23, 0.96) 0%, rgba(11, 15, 23, 0.75) 50%, rgba(11, 15, 23, 0.4) 100%);
+    }
+
+    @keyframes pulse-soft {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
+      50% { transform: scale(1.05); box-shadow: 0 0 0 16px rgba(16, 185, 129, 0); }
+    }
+    .whatsapp-pulse {
+      animation: pulse-soft 2.5s infinite;
+    }
+
+    /* Scroll Reveal */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-on-scroll.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+<script src="/_aistudio-iframe.js?v=2c34bde1"></script></head>
+<body class="bg-[#0B0F17] text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- AVISO DE BOAS-VINDAS -->
+  <div class="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-700 text-slate-950 text-xs sm:text-sm font-bold py-2 px-4 text-center tracking-wide">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <i class="fa-solid fa-seedling text-slate-950"></i>
+      <span>DISCIPLINA TRANSFORMA PLANOS EM RESULTADOS &bull; Aplicações abertas para a Mentoria 2026</span>
+    </div>
+  </div>
+
+  <!-- CABEÇALHO -->
+  <header id="main-header" class="sticky top-0 z-40 bg-[#0B0F17]/90 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="relative shrink-0">
+          <img 
+            src="https://i.ibb.co/5gC61R16/zzz.png" 
+            alt="Lucas Rodrigues" 
+            class="w-11 h-11 rounded-xl object-cover border border-amber-400/80 shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform"
+          />
+        </div>
+        <div>
+          <span class="font-display font-bold text-lg sm:text-xl tracking-wider text-white block leading-none uppercase">
+            Lucas <span class="text-amber-400">Rodrigues</span>
+          </span>
+          <span class="text-[10px] font-semibold text-slate-400 uppercase tracking-widest block mt-1">
+            Estratégia &bull; Negócios &bull; Futuro
+          </span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest font-semibold text-slate-300">
+        <a href="#sobre" class="text-amber-400 hover:text-amber-300 transition-colors">Sobre</a>
+        <a href="#pilares" class="hover:text-amber-400 transition-colors">Pilares</a>
+        <a href="#metodo" class="hover:text-amber-400 transition-colors">O Método</a>
+        <a href="#servicos" class="hover:text-amber-400 transition-colors">Soluções</a>
+        <a href="#depoimentos" class="hover:text-amber-400 transition-colors">Depoimentos</a>
+        <a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Ações -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs tracking-wider uppercase transition-all shadow-md shadow-amber-500/25">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>Agendar Conversa</span>
+        </a>
+      </div>
+
+      <!-- Gatilho Mobile -->
+      <button type="button" id="mobile-menu-btn" class="md:hidden w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-white" aria-label="Abrir Menu">
+        <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
+      </button>
+
+    </div>
+
+    <!-- Menu Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900/98 border-b border-slate-800 px-4 pt-4 pb-6 space-y-3">
+      <a href="#pilares" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Pilares Estratégicos</a>
+      <a href="#metodo" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">O Método</a>
+      <a href="#servicos" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Soluções & Mentoria</a>
+      <a href="#depoimentos" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Resultados & Depoimentos</a>
+      <a href="#faq" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Dúvidas Frequentes</a>
+      
+      <div class="pt-3">
+        <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black text-xs uppercase tracking-wider">
+          <i class="fa-brands fa-whatsapp text-base"></i> Falar com Lucas Rodrigues
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION COM O PLANO DE FUNDO DA FOTO OFICIAL -->
+  <section id="hero" class="relative min-h-[90vh] flex items-center pt-16 pb-24 overflow-hidden bg-[#0B0F17]">
+    
+    <!-- IMAGEM DE FUNDO ENVIADA PELO USUÁRIO COM OVERLAY ELEGANTE -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="mentor_bg.jpg" 
+        alt="Lucas Rodrigues - Estratégia e Projetos Digitais" 
+        class="w-full h-full object-cover object-right-top md:object-center opacity-40 md:opacity-50"
+      />
+      <!-- Gradientes sofisticados para contraste e leitura perfeita -->
+      <div class="absolute inset-0 hero-bg-overlay"></div>
+      <div class="hidden lg:block absolute inset-0 hero-bg-side"></div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL HERO -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-8 space-y-6 text-center lg:text-left">
+          
+          <!-- Símbolo Dourado Flor de Lótus + Tagline -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-semibold backdrop-blur-md shadow-lg shadow-amber-500/10">
+            <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C9 7 4 9 4 14a8 8 0 0 0 16 0c0-5-5-7-8-12z" />
+            </svg>
+            <span class="tracking-widest uppercase">FOCO &bull; ESTRATÉGIA &bull; EVOLUÇÃO</span>
+          </div>
+
+          <!-- Headline Oficial da Foto -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-display tracking-tight text-white uppercase leading-none">
+            DISCIPLINA <br />
+            TRANSFORMA PLANOS <br class="hidden sm:inline" />
+            <span class="gold-gradient-text">EM RESULTADOS</span>
+          </h1>
+
+          <!-- Citação Manuscrita da Foto -->
+          <div class="font-handwriting text-3xl sm:text-4xl text-amber-300/90 py-1">
+            &ldquo;Sonhe, Planeje, Conquiste.&rdquo;
+          </div>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Metodologia prática e posicionamento estratégico para empreendedores e profissionais que desejam transformar potencial em grandes conquistas digitais e financeiras.
+          </p>
+
+          <!-- CTAs de Alta Conversão -->
+          <div class="pt-3 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a 
+              href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico%20individual." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm sm:text-base tracking-wider uppercase transition-all shadow-xl shadow-amber-500/30 hover:scale-105"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Agendar Diagnóstico Estratégico</span>
+            </a>
+
+            <a 
+              href="#pilares" 
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-100 font-bold text-sm sm:text-base border border-slate-700/80 transition-all hover:border-amber-500/40"
+            >
+              <span>Conhecer os 3 Pilares</span>
+              <i class="fa-solid fa-arrow-down text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Caneca Motto Oficial -->
+          <div class="pt-6 border-t border-slate-800/80 flex items-center justify-center lg:justify-start gap-3">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 font-medium tracking-wide italic">
+              &ldquo;Grandes resultados não acontecem por acaso.&rdquo;
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Card Flutuante de Livros / Ativos Intelectuais da Foto -->
+        <div class="lg:col-span-4">
+          <div class="bg-slate-900/90 border border-amber-500/30 rounded-2xl p-6 sm:p-7 backdrop-blur-xl shadow-2xl relative">
+            <div class="absolute -top-3 right-6 bg-amber-500 text-slate-950 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded shadow">
+              Base Conceitual
+            </div>
+
+            <h3 class="text-base font-bold font-display uppercase text-white mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-book-bookmark text-amber-400"></i>
+              <span>Fundamentos da Formação</span>
+            </h3>
+
+            <div class="space-y-3 text-xs">
+              <div class="p-3 rounded-xl bg-[#0B0F17] border border-slate-800 flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-amber-400 mt-1.5 shrink-0"></span>
+                <div>
+                  <h4 class="font-bold text-white uppercase">Estratégia</h4>
+                  <p class="text-slate-400 text-[11px] mt-0.5">Visão sistêmica, posicionamento e vantagem competitiva clara.</p>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-[#0B0F17] border border-slate-800 flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-amber-400 mt-1.5 shrink-0"></span>
+                <div>
+                  <h4 class="font-bold text-white uppercase">Tecnologia</h4>
+                  <p class="text-slate-400 text-[11px] mt-0.5">Automações, plataformas digitais e processos escaláveis.</p>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-[#0B0F17] border border-slate-800 flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-amber-400 mt-1.5 shrink-0"></span>
+                <div>
+                  <h4 class="font-bold text-white uppercase">Liberdade Financeira</h4>
+                  <p class="text-slate-400 text-[11px] mt-0.5">Gestão eficiente de caixa, margem de lucro e alavancagem.</p>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-[#0B0F17] border border-slate-800 flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-amber-400 mt-1.5 shrink-0"></span>
+                <div>
+                  <h4 class="font-bold text-white uppercase">Autoconhecimento</h4>
+                  <p class="text-slate-400 text-[11px] mt-0.5">Inteligência emocional, foco inabalável e disciplina diária.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-800 text-center">
+              <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">
+                PROJETOS &bull; NEGÓCIOS &bull; FUTURO
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OS 3 PILARES EXTRAÍDOS DA FOTO -->
+  <section id="pilares" class="py-20 md:py-28 bg-slate-900/50 border-y border-slate-800/80 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Diretrizes de Ação</h2>
+        <h3 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+          Os 3 Pilares do Sucesso Sustentável
+        </h3>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+          Cada projeto ou mentoria é estruturado sobre o tripé que conecta tecnologia, aquisição e comportamento disciplinado.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pilar 1 -->
+        <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-8 hover:border-amber-500/40 transition-all hover:-translate-y-1 flex flex-col justify-between group">
+          <div class="space-y-5">
+            <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Pilar 01</span>
+              <h4 class="text-xl font-display font-bold text-white uppercase mt-1">PROJETOS DIGITAIS</h4>
+              <p class="text-sm font-medium text-slate-300 italic mt-1">&ldquo;Tecnologia e inovação a favor de grandes ideias.&rdquo;</p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Landing pages e ativos de alta conversão</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Integrações inteligentes e automação de rotinas</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Arquitetura orientada a resultados mensuráveis</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 border-t border-slate-900 mt-6">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20estruturar%20meu%20Projeto%20Digital." target="_blank" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
+              <span>Estruturar Projeto</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="bg-[#0B0F17] border border-amber-500/30 rounded-2xl p-8 hover:border-amber-400 transition-all hover:-translate-y-1 flex flex-col justify-between group relative shadow-xl shadow-amber-500/5">
+          <div class="space-y-5">
+            <div class="w-14 h-14 rounded-xl bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Pilar 02</span>
+              <h4 class="text-xl font-display font-bold text-white uppercase mt-1">MARKETING E VENDAS</h4>
+              <p class="text-sm font-medium text-slate-300 italic mt-1">&ldquo;Conectando pessoas a soluções reais.&rdquo;</p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Funis de aquisição com foco em ROI real</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Posicionamento de alto valor percebido</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Estratégia de fechamento direto no WhatsApp</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 border-t border-slate-900 mt-6">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20escalar%20Marketing%20e%20Vendas." target="_blank" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
+              <span>Acelerar Vendas</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-8 hover:border-amber-500/40 transition-all hover:-translate-y-1 flex flex-col justify-between group">
+          <div class="space-y-5">
+            <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Pilar 03</span>
+              <h4 class="text-xl font-display font-bold text-white uppercase mt-1">DESENVOLVIMENTO PESSOAL</h4>
+              <p class="text-sm font-medium text-slate-300 italic mt-1">&ldquo;Disciplina hoje, liberdade amanhã.&rdquo;</p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Blindagem de rotina e execução sem procrastinação</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Gestão inteligente de energia e tomada de decisão</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-check text-amber-400 mt-0.5"></i>
+                <span>Consistência diária para metas de longo prazo</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 border-t border-slate-900 mt-6">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20desenvolver%20minha%20Disciplina%20e%20Foco." target="_blank" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
+              <span>Construir Disciplina</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS E PROGRAMAS -->
+  <section id="servicos" class="py-20 md:py-28 bg-[#0B0F17] reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Formatos de Atuação</h2>
+        <h3 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+          Soluções Estratégicas para o Seu Momento
+        </h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Escolha o nível de acompanhamento ideal para destravar seu crescimento.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Solução 1 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-7 flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded">Individual</span>
+            <h4 class="text-xl font-bold font-display text-white uppercase">Mentoria Estratégica</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Acompanhamento direto 1-a-1 com Lucas Rodrigues para definir rotas, superar gargalos e alavancar o faturamento.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-400 pt-3 border-t border-slate-800">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Sessões semanais de alinhamento</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Plano de ação de 90 dias</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Acesso prioritário no WhatsApp</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20aplicar%20para%20a%20Mentoria%20Estrat%C3%A9gica." target="_blank" class="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i> Aplicar para Mentoria
+            </a>
+          </div>
+        </div>
+
+        <!-- Solução 2 (Destaque) -->
+        <div class="bg-slate-900 border border-amber-500/50 rounded-2xl p-7 flex flex-col justify-between relative shadow-2xl shadow-amber-500/10">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow">
+            Mais Procurado
+          </span>
+          <div class="space-y-4">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded">Execução</span>
+            <h4 class="text-xl font-bold font-display text-white uppercase">Consultoria em Projetos Digitais</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Estruturamos sua presença na web: páginas de altíssima conversão, automações e arquitetura técnica sob medida.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-400 pt-3 border-t border-slate-800">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Landing pages de alta performance</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Otimização de UX/UI mobile-first</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Deploy rápido e sem custos ocultos</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Projetos%20Digitais." target="_blank" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25">
+              <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
+            </a>
+          </div>
+        </div>
+
+        <!-- Solução 3 -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-7 flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded">Intensivo</span>
+            <h4 class="text-xl font-bold font-display text-white uppercase">Imersão Foco & Disciplina</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Treinamento imersivo para blindar sua rotina contra distrações, criar hábitos consistentes e atingir metas audaciosas.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-400 pt-3 border-t border-slate-800">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Métodos de blocos de foco</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Frameworks de gestão de energia</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Comunidade de suporte e evolução</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20garantir%20minha%20vaga%20na%20Imers%C3%A3o%20Foco." target="_blank" class="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i> Participar da Imersão
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE O ESTRATEGISTA COM A FOTO ENVIADA -->
+  <section id="sobre" class="py-20 md:py-28 bg-[#070A0F] border-b border-slate-800 relative reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Foto de Perfil Oficial -->
+        <div class="lg:col-span-5 text-center">
+          <div class="relative inline-block mx-auto max-w-sm">
+            <div class="absolute -inset-1.5 bg-gradient-to-tr from-amber-500 to-yellow-300 rounded-3xl blur opacity-30"></div>
+            <div class="relative rounded-2xl overflow-hidden border-2 border-amber-400/80 shadow-2xl shadow-amber-500/20 bg-slate-900">
+              <img 
+                src="https://i.ibb.co/5gC61R16/zzz.png" 
+                alt="Lucas Rodrigues - Estrategista de Negócios" 
+                class="w-full h-auto object-cover max-h-[520px]"
+              />
+              <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-5 text-left">
+                <span class="text-[10px] font-black uppercase tracking-wider text-amber-400 bg-amber-500/20 border border-amber-500/30 px-2.5 py-0.5 rounded-full">
+                  Estrategista Principal
+                </span>
+                <h3 class="text-xl font-black text-white uppercase font-display mt-1">
+                  Lucas Rodrigues
+                </h3>
+                <p class="text-xs text-slate-300">
+                  Negócios • Projetos Digitais • Governança
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo Institucional -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-award"></i>
+            <span>Posicionamento & Autoridade</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white uppercase font-display">
+            Estratégia prática sem atalhos ilusórios.
+          </h2>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Lucas Rodrigues combina visão sistêmica de mercado com execução técnica avançada em projetos digitais. Seu método transforma planos ambiciosos em operações rentáveis e escaláveis.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-amber-400 font-bold text-xs uppercase tracking-wider block">Foco Cirúrgico</span>
+              <p class="text-xs text-slate-400 mt-1">Eliminação de ruídos operacionais para priorizar o que realmente gera receita e autoridade.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <span class="text-amber-400 font-bold text-xs uppercase tracking-wider block">Ativos Escaláveis</span>
+              <p class="text-xs text-slate-400 mt-1">Construção de páginas, processos e automações que funcionam de forma previsível e contínua.</p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
+            <a 
+              href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico." 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition-all"
+            >
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+              <span>Agendar Sessão com Lucas</span>
+            </a>
+            <a 
+              href="#pilares" 
+              class="w-full sm:w-auto text-center text-xs font-bold text-slate-300 hover:text-amber-400 uppercase tracking-wider transition-colors"
+            >
+              Explorar Pilares &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="py-20 md:py-28 bg-slate-900/40 border-y border-slate-800/80 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Prova Social</h2>
+        <h3 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+          Resultados de Quem Decidiu Agir
+        </h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          O impacto real da metodologia na rotina e nas empresas de quem acelerou conosco.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed italic">
+              &ldquo;A mentoria do Lucas abriu minha visão sobre processo e escala. Em apenas 45 dias, dobramos a taxa de conversão das nossas páginas comerciais e organizamos a rotina da equipe.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Cliente" class="w-11 h-11 rounded-full object-cover border border-amber-500/30" />
+            <div>
+              <h4 class="text-sm font-bold text-white">Rodrigo Mendonça</h4>
+              <p class="text-xs text-slate-400">Fundador &bull; Mendonça Tech</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed italic">
+              &ldquo;Disciplina não é sobre trabalhar 16 horas por dia, é sobre foco cirúrgico no que dá resultado. A metodologia do Lucas me deu clareza e paz para crescer com previsibilidade.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Cliente" class="w-11 h-11 rounded-full object-cover border border-amber-500/30" />
+            <div>
+              <h4 class="text-sm font-bold text-white">Camila Guimarães</h4>
+              <p class="text-xs text-slate-400">Consultora &bull; CG Gestão</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed italic">
+              &ldquo;O alinhamento estratégico e o suporte direto com o Lucas transformaram totalmente a entrega dos nossos projetos digitais. Recomendo de olhos fechados.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Cliente" class="w-11 h-11 rounded-full object-cover border border-amber-500/30" />
+            <div>
+              <h4 class="text-sm font-bold text-white">Felipe Siqueira</h4>
+              <p class="text-xs text-slate-400">Especialista &bull; Pulse Media</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 md:py-28 bg-[#0B0F17] reveal-on-scroll">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-3">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Transparência</h2>
+        <h3 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+          Perguntas Frequentes
+        </h3>
+        <p class="text-slate-400 text-sm">
+          Respostas objetivas para dúvidas comuns sobre a metodologia e o processo de contratação.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden">
+          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors">
+            <span class="text-sm sm:text-base">Para quem é a mentoria e consultoria de Lucas Rodrigues?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+            É direcionada a empresários, líderes de projetos, profissionais liberais e empreendedores que desejam acelerar seus resultados com disciplina, processos claros e alavancagem através de tecnologia e marketing.
+          </div>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden">
+          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors">
+            <span class="text-sm sm:text-base">Como funciona a primeira conversa de alinhamento?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+            Você clica no botão do WhatsApp e inicia um bate-papo rápido. Agendamos uma chamada de diagnóstico de 30 minutos sem custo para entender seu modelo de negócio e verificar a aderência mútua.
+          </div>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden">
+          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors">
+            <span class="text-sm sm:text-base">Vocês também entregam landing pages e sistemas prontos?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+            Sim! Nosso braço técnico de Projetos Digitais desenvolve páginas limpas, responsivas em arquivo único e configuradas para alta taxa de conversão, prontas para hospedagem imediata (ex: Netlify).
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-[#070A0F] border-t border-slate-900 py-14 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-900">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-slate-950 font-display font-bold text-base">
+            <svg class="w-5 h-5 text-slate-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C9 7 4 9 4 14a8 8 0 0 0 16 0c0-5-5-7-8-12z" />
+            </svg>
+          </div>
+          <div>
+            <span class="font-display font-bold text-base uppercase text-white tracking-wider">
+              Lucas <span class="text-amber-400">Rodrigues</span>
+            </span>
+            <p class="text-[10px] text-slate-400 uppercase tracking-widest">Disciplina transforma planos em resultados</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/5521995179870" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-slate-950 transition-all">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400 hover:bg-pink-500 hover:text-slate-950 transition-all">
+            <i class="fa-brands fa-instagram text-base"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-blue-400 hover:bg-blue-500 hover:text-slate-950 transition-all">
+            <i class="fa-brands fa-linkedin text-base"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
+        <p>&copy; 2026 Lucas Rodrigues. Todos os direitos reservados.</p>
+        <p class="tracking-widest uppercase text-amber-400/80 font-semibold">PROJETOS &bull; NEGÓCIOS &bull; FUTURO</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP DE ALTA CONVERSÃO -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <a 
+      href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20mentoria%20e%20projetos." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="hidden sm:flex items-center gap-2 bg-slate-900/95 border border-amber-500/40 text-white text-xs font-semibold px-4 py-2 rounded-full shadow-2xl backdrop-blur-sm hover:border-emerald-500 transition-colors"
+    >
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+      <span>Falar diretamente com Lucas</span>
+    </a>
+
+    <a 
+      href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20mentoria%20e%20projetos." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 flex items-center justify-center shadow-2xl shadow-emerald-500/40 hover:scale-110 transition-all duration-300 whatsapp-pulse"
+      aria-label="Abrir WhatsApp Oficial"
+    >
+      <i class="fa-brands fa-whatsapp text-3xl sm:text-4xl text-slate-950"></i>
+    </a>
+  </div>
+
+  <script>
+    // Menu mobile toggle
+    const mBtn = document.getElementById('mobile-menu-btn');
+    const mMenu = document.getElementById('mobile-menu');
+    if (mBtn && mMenu) {
+      mBtn.addEventListener('click', () => {
+        mMenu.classList.toggle('hidden');
+        const icon = document.getElementById('mobile-menu-icon');
+        if (icon) {
+          icon.classList.toggle('fa-bars');
+          icon.classList.toggle('fa-xmark');
+        }
+      });
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.classList.toggle('hidden');
+        const icon = btn.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('rotate-180');
+        }
+      });
+    });
+
+    // Scroll Reveal com IntersectionObserver
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+    } else {
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => el.classList.add('is-revealed'));
+    }
+  </script>
+</body>
+</html>
