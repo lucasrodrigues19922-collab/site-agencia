@@ -19,11 +19,14 @@ Public entry point: host port 3000. Healthcheck curls `/` with `urllib`.
 - The served HTML must be the repo's own `index.html` (47 KB, title
   "Lucas Rodrigues | Estratégia, Projetos Digitais & Negócios").
 
-## Known gaps in the repo (pre-existing, not setup issues)
-- `mentor_bg.jpg` is referenced (hero background `<img>` and `og:image`) but is
-  **not in the repository**. The hero falls back to its dark gradient overlay,
-  and the browser logs "Failed to load img mentor_bg.jpg". Add the real image
-  next to `index.html` to restore it.
-- `/index.html` loads `/_aistudio-iframe.js`, an artifact of the tool the page
-  was originally exported from. It is absent and returns 404; harmless, since
-  the page has no dependency on it.
+## Known gaps in the repo
+- **Hero photo missing.** `mentor_bg.jpg` (the official Lucas Rodrigues photo)
+  was never committed — it only existed in the environment the page was
+  exported from. Its `<img>` is therefore commented out inside `#hero` so the
+  browser does not request a 404; the hero shows its own dark gradients
+  (`bg-[#0B0F17]` + `.hero-bg-overlay` / `.hero-bg-side`) instead. To restore
+  the photo: drop `mentor_bg.jpg` next to `index.html` and uncomment that
+  `<img>`. `og:image` still points at `mentor_bg.jpg`, so social previews need
+  the same file.
+- The `/_aistudio-iframe.js` script tag (an artifact of the export tool) was
+  removed — the file never existed in the repo and the page never used it.
