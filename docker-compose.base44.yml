@@ -1,0 +1,41 @@
+# Base44 dev environment for this repository.
+#
+# The project is a single static landing page (index.html) with no build step,
+# no backend and no external credentials. Tailwind, Font Awesome and Google
+# Fonts are loaded from their public CDNs at runtime.
+#
+# Source is bind-mounted and served directly, so editing index.html shows up on
+# the next page load — no image rebuild required.
+
+services:
+  web:
+    image: python:3.12-slim
+    command:
+      - python
+      - -m
+      - http.server
+      - "3000"
+      - --bind
+      - "0.0.0.0"
+      - --directory
+      - /app
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app:ro
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:3000/', timeout=3)"
+      interval: 15s
+      timeout: 5s
+      retries: 4
+      start_period: 10s
+    restart: on-failure
+    labels:
+      base44.project: "Lucas Rodrigues — Landing"
+      base44.kind: "web"
+      base44.port: "3000"
