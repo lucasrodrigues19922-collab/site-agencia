@@ -10,7 +10,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Lucas Rodrigues | Estratégia, Projetos Digitais & Negócios" />
   <meta property="og:description" content="Disciplina transforma planos em resultados. Foco, estratégia e evolução com Lucas Rodrigues." />
-  <meta property="og:image" content="mentor_bg.jpg" />
+  <meta property="og:image" content="https://i.ibb.co/5gC61R16/zzz.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lucas Rodrigues | Estratégia, Projetos Digitais & Negócios" />
+  <meta name="twitter:description" content="Estratégia, projetos digitais e execução disciplinada para transformar planos em resultados." />
+  <meta name="twitter:image" content="https://i.ibb.co/5gC61R16/zzz.png" />
   
   <!-- Tipografia Google Fonts (Cinzel / Plus Jakarta Sans / Caveat para o manuscrito) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,12 +61,15 @@
       -webkit-text-fill-color: transparent;
     }
 
-    .hero-bg-overlay {
-      background: linear-gradient(180deg, rgba(11, 15, 23, 0.72) 0%, rgba(11, 15, 23, 0.88) 60%, rgba(11, 15, 23, 1) 100%);
+    .hero-ambient {
+      background:
+        radial-gradient(ellipse at 82% 18%, rgba(212, 175, 55, 0.14), transparent 36%),
+        radial-gradient(ellipse at 8% 88%, rgba(30, 64, 100, 0.2), transparent 34%),
+        #0B0F17;
     }
 
-    .hero-bg-side {
-      background: linear-gradient(90deg, rgba(11, 15, 23, 0.96) 0%, rgba(11, 15, 23, 0.75) 50%, rgba(11, 15, 23, 0.4) 100%);
+    section[id] {
+      scroll-margin-top: 5rem;
     }
 
     @keyframes pulse-soft {
@@ -74,14 +81,13 @@
     }
 
     /* Scroll Reveal */
-    .reveal-on-scroll {
+    .js-scroll-reveal .reveal-on-scroll {
       opacity: 0;
       transform: translateY(28px);
       transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: opacity, transform;
     }
 
-    .reveal-on-scroll.is-revealed {
+    .js-scroll-reveal .reveal-on-scroll.is-revealed {
       opacity: 1;
       transform: translateY(0);
     }
@@ -92,6 +98,9 @@
         transform: none !important;
         transition: none !important;
       }
+      .whatsapp-pulse {
+        animation: none !important;
+      }
     }
   </style>
 <script src="/_aistudio-iframe.js?v=2c34bde1"></script></head>
@@ -101,7 +110,7 @@
   <div class="bg-gradient-to-r from-amber-700 via-amber-600 to-amber-700 text-slate-950 text-xs sm:text-sm font-bold py-2 px-4 text-center tracking-wide">
     <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
       <i class="fa-solid fa-seedling text-slate-950"></i>
-      <span>DISCIPLINA TRANSFORMA PLANOS EM RESULTADOS &bull; Aplicações abertas para a Mentoria 2026</span>
+            <span>DISCIPLINA TRANSFORMA PLANOS EM RESULTADOS &bull; Conheça as soluções e o processo de trabalho</span>
     </div>
   </div>
 
@@ -110,7 +119,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Logo -->
-      <a href="#" class="flex items-center gap-3 group">
+      <a href="#hero" class="flex items-center gap-3 group">
         <div class="relative shrink-0">
           <img 
             src="https://i.ibb.co/5gC61R16/zzz.png" 
@@ -134,7 +143,6 @@
         <a href="#pilares" class="hover:text-amber-400 transition-colors">Pilares</a>
         <a href="#metodo" class="hover:text-amber-400 transition-colors">O Método</a>
         <a href="#servicos" class="hover:text-amber-400 transition-colors">Soluções</a>
-        <a href="#depoimentos" class="hover:text-amber-400 transition-colors">Depoimentos</a>
         <a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a>
       </nav>
 
@@ -147,7 +155,7 @@
       </div>
 
       <!-- Gatilho Mobile -->
-      <button type="button" id="mobile-menu-btn" class="md:hidden w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-white" aria-label="Abrir Menu">
+      <button type="button" id="mobile-menu-btn" class="md:hidden w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-white" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
         <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
       </button>
 
@@ -158,7 +166,6 @@
       <a href="#pilares" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Pilares Estratégicos</a>
       <a href="#metodo" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">O Método</a>
       <a href="#servicos" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Soluções & Mentoria</a>
-      <a href="#depoimentos" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Resultados & Depoimentos</a>
       <a href="#faq" class="block py-2 text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Dúvidas Frequentes</a>
       
       <div class="pt-3">
@@ -172,17 +179,7 @@
   <!-- HERO SECTION COM O PLANO DE FUNDO DA FOTO OFICIAL -->
   <section id="hero" class="relative min-h-[90vh] flex items-center pt-16 pb-24 overflow-hidden bg-[#0B0F17]">
     
-    <!-- IMAGEM DE FUNDO ENVIADA PELO USUÁRIO COM OVERLAY ELEGANTE -->
-    <div class="absolute inset-0 z-0">
-      <img 
-        src="mentor_bg.jpg" 
-        alt="Lucas Rodrigues - Estratégia e Projetos Digitais" 
-        class="w-full h-full object-cover object-right-top md:object-center opacity-40 md:opacity-50"
-      />
-      <!-- Gradientes sofisticados para contraste e leitura perfeita -->
-      <div class="absolute inset-0 hero-bg-overlay"></div>
-      <div class="hidden lg:block absolute inset-0 hero-bg-side"></div>
-    </div>
+    <div aria-hidden="true" class="absolute inset-0 z-0 hero-ambient"></div>
 
     <!-- CONTEÚDO PRINCIPAL HERO -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -349,7 +346,7 @@
             </ul>
           </div>
           <div class="pt-6 border-t border-slate-900 mt-6">
-            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20estruturar%20meu%20Projeto%20Digital." target="_blank" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20estruturar%20meu%20Projeto%20Digital." target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
               <span>Estruturar Projeto</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
             </a>
           </div>
@@ -382,7 +379,7 @@
             </ul>
           </div>
           <div class="pt-6 border-t border-slate-900 mt-6">
-            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20escalar%20Marketing%20e%20Vendas." target="_blank" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20escalar%20Marketing%20e%20Vendas." target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
               <span>Acelerar Vendas</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
             </a>
           </div>
@@ -415,7 +412,7 @@
             </ul>
           </div>
           <div class="pt-6 border-t border-slate-900 mt-6">
-            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20desenvolver%20minha%20Disciplina%20e%20Foco." target="_blank" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20desenvolver%20minha%20Disciplina%20e%20Foco." target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2 uppercase tracking-wider">
               <span>Construir Disciplina</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
             </a>
           </div>
@@ -456,7 +453,7 @@
             </ul>
           </div>
           <div class="pt-6 mt-6 border-t border-slate-800">
-            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20aplicar%20para%20a%20Mentoria%20Estrat%C3%A9gica." target="_blank" class="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20aplicar%20para%20a%20Mentoria%20Estrat%C3%A9gica." target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
               <i class="fa-brands fa-whatsapp"></i> Aplicar para Mentoria
             </a>
           </div>
@@ -480,7 +477,7 @@
             </ul>
           </div>
           <div class="pt-6 mt-6 border-t border-slate-800">
-            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Projetos%20Digitais." target="_blank" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Projetos%20Digitais." target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25">
               <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
             </a>
           </div>
@@ -501,7 +498,7 @@
             </ul>
           </div>
           <div class="pt-6 mt-6 border-t border-slate-800">
-            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20garantir%20minha%20vaga%20na%20Imers%C3%A3o%20Foco." target="_blank" class="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+            <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Quero%20garantir%20minha%20vaga%20na%20Imers%C3%A3o%20Foco." target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
               <i class="fa-brands fa-whatsapp"></i> Participar da Imersão
             </a>
           </div>
@@ -590,76 +587,43 @@
     </div>
   </section>
 
-  <!-- DEPOIMENTOS -->
-  <section id="depoimentos" class="py-20 md:py-28 bg-slate-900/40 border-y border-slate-800/80 reveal-on-scroll">
+  <!-- PROCESSO DE TRABALHO -->
+  <section id="metodo" class="py-20 md:py-28 bg-slate-900/40 border-y border-slate-800/80 reveal-on-scroll">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
       <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Prova Social</h2>
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Como funciona</h2>
         <h3 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
-          Resultados de Quem Decidiu Agir
+          Clareza antes da execução
         </h3>
         <p class="text-slate-400 text-sm sm:text-base">
-          O impacto real da metodologia na rotina e nas empresas de quem acelerou conosco.
+          Cada trabalho começa entendendo o momento do projeto e alinhando prioridades, escopo e próximos passos.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="flex text-amber-400 text-sm gap-1">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-300 text-sm leading-relaxed italic">
-              &ldquo;A mentoria do Lucas abriu minha visão sobre processo e escala. Em apenas 45 dias, dobramos a taxa de conversão das nossas páginas comerciais e organizamos a rotina da equipe.&rdquo;
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Cliente" class="w-11 h-11 rounded-full object-cover border border-amber-500/30" />
-            <div>
-              <h4 class="text-sm font-bold text-white">Rodrigo Mendonça</h4>
-              <p class="text-xs text-slate-400">Fundador &bull; Mendonça Tech</p>
-            </div>
-          </div>
-        </div>
+      <ol class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <li class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 space-y-4">
+          <span class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center font-display font-bold">01</span>
+          <h4 class="text-lg font-bold font-display text-white uppercase">Diagnóstico</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Conversamos sobre seus objetivos, contexto atual e principais desafios para avaliar se existe aderência ao trabalho.</p>
+        </li>
+        <li class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 space-y-4">
+          <span class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center font-display font-bold">02</span>
+          <h4 class="text-lg font-bold font-display text-white uppercase">Plano de ação</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Definimos prioridades, entregáveis e uma sequência de execução compatível com o escopo escolhido.</p>
+        </li>
+        <li class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 space-y-4">
+          <span class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center font-display font-bold">03</span>
+          <h4 class="text-lg font-bold font-display text-white uppercase">Execução e revisão</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Avançamos conforme o formato acordado, revisando decisões e próximos passos ao longo do trabalho.</p>
+        </li>
+      </ol>
 
-        <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="flex text-amber-400 text-sm gap-1">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-300 text-sm leading-relaxed italic">
-              &ldquo;Disciplina não é sobre trabalhar 16 horas por dia, é sobre foco cirúrgico no que dá resultado. A metodologia do Lucas me deu clareza e paz para crescer com previsibilidade.&rdquo;
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Cliente" class="w-11 h-11 rounded-full object-cover border border-amber-500/30" />
-            <div>
-              <h4 class="text-sm font-bold text-white">Camila Guimarães</h4>
-              <p class="text-xs text-slate-400">Consultora &bull; CG Gestão</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-7 flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="flex text-amber-400 text-sm gap-1">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-slate-300 text-sm leading-relaxed italic">
-              &ldquo;O alinhamento estratégico e o suporte direto com o Lucas transformaram totalmente a entrega dos nossos projetos digitais. Recomendo de olhos fechados.&rdquo;
-            </p>
-          </div>
-          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Cliente" class="w-11 h-11 rounded-full object-cover border border-amber-500/30" />
-            <div>
-              <h4 class="text-sm font-bold text-white">Felipe Siqueira</h4>
-              <p class="text-xs text-slate-400">Especialista &bull; Pulse Media</p>
-            </div>
-          </div>
-        </div>
+      <div class="text-center mt-10">
+        <a href="https://wa.me/5521995179870?text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20entender%20se%20o%20seu%20trabalho%20faz%20sentido%20para%20meu%20momento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition-all">
+          <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
+          Conversar sobre meu projeto
+        </a>
       </div>
-
     </div>
   </section>
 
@@ -680,31 +644,31 @@
       <div class="space-y-4">
         
         <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden">
-          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors">
+          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors" aria-expanded="false" aria-controls="faq-answer-1">
             <span class="text-sm sm:text-base">Para quem é a mentoria e consultoria de Lucas Rodrigues?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+            <i aria-hidden="true" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
           </button>
-          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+          <div id="faq-answer-1" class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
             É direcionada a empresários, líderes de projetos, profissionais liberais e empreendedores que desejam acelerar seus resultados com disciplina, processos claros e alavancagem através de tecnologia e marketing.
           </div>
         </div>
 
         <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden">
-          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors">
+          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors" aria-expanded="false" aria-controls="faq-answer-2">
             <span class="text-sm sm:text-base">Como funciona a primeira conversa de alinhamento?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+            <i aria-hidden="true" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
           </button>
-          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+          <div id="faq-answer-2" class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
             Você clica no botão do WhatsApp e inicia um bate-papo rápido. Agendamos uma chamada de diagnóstico de 30 minutos sem custo para entender seu modelo de negócio e verificar a aderência mútua.
           </div>
         </div>
 
         <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden">
-          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors">
+          <button type="button" class="faq-btn w-full p-5 text-left flex items-center justify-between font-bold text-white hover:text-amber-400 transition-colors" aria-expanded="false" aria-controls="faq-answer-3">
             <span class="text-sm sm:text-base">Vocês também entregam landing pages e sistemas prontos?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+            <i aria-hidden="true" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
           </button>
-          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
+          <div id="faq-answer-3" class="faq-content hidden px-5 pb-5 text-sm text-slate-300 border-t border-slate-800/60 pt-3 leading-relaxed">
             Sim! Nosso braço técnico de Projetos Digitais desenvolve páginas limpas, responsivas em arquivo único e configuradas para alta taxa de conversão, prontas para hospedagem imediata (ex: Netlify).
           </div>
         </div>
@@ -732,17 +696,9 @@
           </div>
         </div>
 
-        <div class="flex items-center gap-3">
-          <a href="https://wa.me/5521995179870" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-slate-950 transition-all">
-            <i class="fa-brands fa-whatsapp text-base"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400 hover:bg-pink-500 hover:text-slate-950 transition-all">
-            <i class="fa-brands fa-instagram text-base"></i>
-          </a>
-          <a href="https://linkedin.com" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-blue-400 hover:bg-blue-500 hover:text-slate-950 transition-all">
-            <i class="fa-brands fa-linkedin text-base"></i>
-          </a>
-        </div>
+        <a href="https://wa.me/5521995179870" target="_blank" rel="noopener noreferrer" aria-label="Conversar com Lucas Rodrigues pelo WhatsApp" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-slate-950 transition-all">
+          <i aria-hidden="true" class="fa-brands fa-whatsapp text-base"></i>
+        </a>
 
       </div>
 
@@ -781,38 +737,47 @@
   </div>
 
   <script>
-    // Menu mobile toggle
     const mBtn = document.getElementById('mobile-menu-btn');
     const mMenu = document.getElementById('mobile-menu');
+    const mIcon = document.getElementById('mobile-menu-icon');
+
     if (mBtn && mMenu) {
-      mBtn.addEventListener('click', () => {
-        mMenu.classList.toggle('hidden');
-        const icon = document.getElementById('mobile-menu-icon');
-        if (icon) {
-          icon.classList.toggle('fa-bars');
-          icon.classList.toggle('fa-xmark');
+      const setMenuOpen = (isOpen) => {
+        mMenu.classList.toggle('hidden', !isOpen);
+        mBtn.setAttribute('aria-expanded', String(isOpen));
+        mBtn.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+        if (mIcon) {
+          mIcon.classList.toggle('fa-bars', !isOpen);
+          mIcon.classList.toggle('fa-xmark', isOpen);
         }
+      };
+
+      mBtn.addEventListener('click', () => {
+        setMenuOpen(mBtn.getAttribute('aria-expanded') !== 'true');
+      });
+      mMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => setMenuOpen(false));
       });
     }
 
-    // FAQ Accordion
     document.querySelectorAll('.faq-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        const content = btn.nextElementSibling;
-        content.classList.toggle('hidden');
+        const isOpen = btn.getAttribute('aria-expanded') !== 'true';
+        const content = document.getElementById(btn.getAttribute('aria-controls'));
         const icon = btn.querySelector('i');
-        if (icon) {
-          icon.classList.toggle('rotate-180');
-        }
+        btn.setAttribute('aria-expanded', String(isOpen));
+        if (content) content.classList.toggle('hidden', !isOpen);
+        if (icon) icon.classList.toggle('rotate-180', isOpen);
       });
     });
 
-    // Scroll Reveal com IntersectionObserver
-    if ('IntersectionObserver' in window) {
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-scroll-reveal');
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
           }
         });
       }, {
@@ -821,8 +786,6 @@
       });
 
       document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
-    } else {
-      document.querySelectorAll('.reveal-on-scroll').forEach(el => el.classList.add('is-revealed'));
     }
   </script>
 </body>
